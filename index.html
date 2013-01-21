@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Delicious Delights - Delicious recipes for the hungry!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site for the hungry to gather around and find something to make and cook.">
+    <meta name="author" content="Robert Kuncewicz">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="../assets/css/base.css" rel="stylesheet">		
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top", id="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#", id="brand">Delicious Delights</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav", id="navigation">
+                <li class="active"><a href="#", id="btn-home">Home</a></li>
+                <li id="btn-search"><a href="#search">Search</a></li>
+                <li><a href="#about", id="btn-about">About</a></li>
+		<li><a href="https://docs.google.com/presentation/d/1w2xdvSBQKCQf3S5c0qmu4zAeqJdAcITb9SRU8isvNs8/edit">Presentation</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+     </div>
+        
+     <div id="about">
+         <h2>Robert Kuncewicz</h2>
+         <div class="span8">
+        <p>Born in the streets of London, England, Robert Kuncewicz has been studying to become a Computer Scientist at the University of Guelph. Soon to be finished, he dreams of combing the deserts of Toronto, Ontario going to jazz bars, beer bars, and bars in general. Restaurants are nice too, if they have good beer. </p>
+        <p> Email: rkuncewi@uoguelph.ca</p>
+        </div>
+    </div>
+     
+     <div id="recipe">
+        <div class="row-fluid">
+                <div class="span4">
+                    <div id="recipePic"></div>
+                    <div id="nutrition"> 
+                        <h4>Nutritional Information </h4>
+                        <ul id="nutritionalList"></ul>
+                    </div>
+                </div>
+                <div class="span4">
+                    <h2 id="recipeTitle"> </h2>
+                    <div id="ingredientDiv", class="ingredientDiv">
+                        <h4>Ingredients</h4>
+                        <ul id="ingredients"> </ul>
+                    </div>
+                </div>
+                <div class="span2">
+                    <h3> Do you like this recipe?</h4>
+                    <a id="yes-button">
+                        <button class="btn", href="">Yes!</button>
+                    </a>    
+                    <button class="btn", id="no-button">No :(</button>
+                </div>
+        </div>
+    </div>
+
+    <div id="contents"> 
+        <div class="results", id="results">
+            <ul class="thumbnails", id="thumbnails">
+            </ul>
+            <div id="noresult-text"> </div>
+            <div style="text-align: center">
+                <button class="btn btn-large btn-primary" id="goback-button"> Go back </button> 
+            </div>    
+        </div>
+
+        <div class="container">
+            <div class="search", id="search">
+                    <h3> Choose a recipe or ingredient!</h3>
+                    <input type="text" id="input-text" class = "input-block-level" placeholder = "Type in a recipe or ingredient..">
+                    <button class="btn btn-large btn-primary" type="submit" id="search-button"> Find a Recipe</button>	
+            </div>		
+        </div>	
+
+        <div class="container", id="home">
+        <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <h1>Welcome to Delicious Delights</h1>
+                <p>You seem hungry, here let me help. This is an application that allows you, the user, to search for a recipe that is desirable. Organized nicely by showing the pictures of the delicious meals, you can choose what tickles your fancy. It also works with ingredients, so if that squash you bought a few weeks ago isn't looking too great, you may want to type it in and find something to make with it.</p>
+                <center>
+                    <div class="start-cooking">
+                        <button class="btn btn-large btn-primary" id="start-search"> Let's get cooking</button>
+                    </div>
+                </center>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+</div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster --><
+    <script src="../assets/jquery/jquery.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/jquery.capty.js"></script>
+    <script src="../assets/js/base.js"></script>
+  </body>
+</html>
+
